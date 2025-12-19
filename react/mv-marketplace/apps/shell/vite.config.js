@@ -14,7 +14,7 @@ export default defineConfig({
         payment_app: "http://localhost:5004/assets/remoteEntry.js",
         package: "http://localhost:5005/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom"], // Shared dependencies
     }),
   ],
 });

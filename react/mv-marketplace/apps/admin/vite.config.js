@@ -9,12 +9,12 @@ export default defineConfig({
       name: "admin_app",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App.jsx",
+        "./App": "./src/App.jsx", // Exposing the main app component
       },
       remotes: {
-        package: "http://localhost:5005/assets/remoteEntry.js",
+        package: "http://localhost:5005/assets/remoteEntry.js", // The remote package
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom"], // Shared libraries
     }),
   ],
   preview: { port: 5003, strictPort: true },
