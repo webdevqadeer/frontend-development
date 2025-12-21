@@ -6,15 +6,22 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'No dev server for theme package'",
-    "build": "echo 'No build needed for theme package'",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "vite": "^4.5.14"
   }
 }
